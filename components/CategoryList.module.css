@@ -1,0 +1,39 @@
+.mainDiv {
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div {
+    background-color: rgb(40, 0, 82);
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+
+.a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-size: 0.8rem;
+}
+    .a:hover{
+        text-shadow: 0px 0px 10px rgb(243, 69, 255);
+        color: rgb(245, 111, 255);
+    }
+
+.title {
+    color: rgb(228, 228, 228);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-family: system-ui;
+}
+
+.right {
+    padding-left: 10px;
+    color: rgb(228, 228, 228);
+    font-family: system-ui;
+}

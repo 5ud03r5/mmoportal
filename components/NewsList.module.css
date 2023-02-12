@@ -1,0 +1,80 @@
+.mainDiv {
+    width: 40%
+   
+}
+
+.div {
+    background-color: rgb(40, 0, 82);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    
+    
+    margin-bottom: 20px;
+}
+
+
+@keyframes divAct {
+    from {box-shadow: 0px 0px 15px rgb(69, 255, 243), 0px 0px 15px rgb(69, 252, 255);}
+    to {box-shadow: 0px 0px 25px rgb(69, 255, 243), 0px 0px 25px rgb(69, 252, 255);}
+}
+
+.divActive {
+    background-color: rgb(40, 0, 82);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; 
+    animation: divAct 1s infinite alternate
+}
+
+.img {
+    height: 20%;
+    max-width: 80%;
+}
+
+.divActive img {
+    max-width: 80%;
+    height: 50%;
+}
+.parsed {
+    color: rgb(228, 228, 228);
+
+}
+    .parsed a {
+        color: rgb(245, 111, 255);
+    }
+    .parsed a:hover {
+        text-shadow: 0px 0px 10px rgb(243, 69, 255);
+        color: rgb(245, 111, 255);
+
+    }
+
+.a {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-size: 0.8rem;
+}
+    .a:hover{
+        text-shadow: 0px 0px 10px rgb(243, 69, 255);
+        color: rgb(245, 111, 255);
+        cursor: pointer;
+    }
+
+.title {
+    color: rgba(0, 255, 255, 0.873);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-family: system-ui;
+}
+
+.description {
+    padding-left: 10px;
+    color: rgb(228, 228, 228);
+    font-family: system-ui;
+}
+
+.hr {
+    color: rgb(243, 69, 255);
+    
+}

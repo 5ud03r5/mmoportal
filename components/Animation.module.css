@@ -1,0 +1,295 @@
+.div {
+    position: relative;
+    top:10px;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: translateX(0px)
+   
+}
+
+@keyframes moon {
+    0% {box-shadow: 0px 0px 30px rgb(190, 11, 255), 0px 0px 20px rgb(190, 13, 255)}
+    20% {box-shadow: 0px 20px 25px rgb(190, 11, 255), 10px 0px 40px rgb(190, 13, 255)}
+    40% {box-shadow: 0px 0px 25px rgb(190, 11, 255), 0px 20px 40px rgb(190, 13, 255)}
+    60% {box-shadow: 0px 0px 60px rgb(239, 11, 255), 0px 20px 40px rgb(239, 11, 255)}
+    80% {box-shadow: 0px 0px 100px rgb(239, 11, 255), 0px 0px 100px rgb(239, 11, 255)}
+    100% {box-shadow: 0px 0px 60px rgb(239, 11, 255), 0px 0px 30px rgb(239, 11, 255)}
+}
+
+@keyframes planet {
+    0% {box-shadow: 0px 0px 30px rgba(208, 98, 255, 0.879), 0px 0px 20px rgba(208, 98, 255, 0.879)}
+    20% {box-shadow: 0px 0px 25px rgba(208, 98, 255, 0.879), 0px 0px 20px rgba(208, 98, 255, 0.879)}
+    40% {box-shadow: 0px 0px 25px rgba(208, 98, 255, 0.879), 0px 0px 40px rgba(208, 98, 255, 0.879)}
+    60% {box-shadow: 0px 0px 60px rgba(208, 98, 255, 0.879), 0px 0px 40px rgba(208, 98, 255, 0.879)}
+    80% {box-shadow: 0px 0px 100px rgba(208, 98, 255, 0.879), 0px 0px 50px rgba(208, 98, 255, 0.879)}
+    100% {box-shadow: 0px 0px 60px rgba(208, 98, 255, 0.879), 0px 0px 30px rgba(208, 98, 255, 0.879)}
+}
+
+@keyframes move {
+    0% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(137, 78, 255, 0.879));  }
+    10% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(51, 0, 117, 0.879), rgba(126, 61, 255, 0.879)) }
+    20% {background: linear-gradient(to right, rgba(20, 0, 84, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879)) }
+    30% {background: linear-gradient(to right, rgba(60, 0, 255, 0.879), rgba(54, 0, 126, 0.879),rgba(114, 43, 255, 0.879)) }
+    40% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(127, 63, 255, 0.879)) }
+    50% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(62, 0, 143, 0.879), rgba(126, 61, 255, 0.879)) }
+    60% {background: linear-gradient(to right, rgba(16, 0, 68, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879)) }
+    70% {background: linear-gradient(to right, rgba(18, 0, 78, 0.879), rgba(107, 0, 247, 0.879),rgba(114, 43, 255, 0.879)) }
+    80% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(133, 71, 255, 0.879)) }
+    90% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(97, 0, 223, 0.879), rgba(126, 61, 255, 0.879)) }
+    100% {background: linear-gradient(to right, rgba(16, 0, 68, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879))}
+    
+
+}
+
+@keyframes move {
+    0% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(137, 78, 255, 0.879));  }
+    10% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(51, 0, 117, 0.879), rgba(126, 61, 255, 0.879)) }
+    20% {background: linear-gradient(to right, rgba(20, 0, 84, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879)) }
+    30% {background: linear-gradient(to right, rgba(60, 0, 255, 0.879), rgba(54, 0, 126, 0.879),rgba(114, 43, 255, 0.879)) }
+    40% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(127, 63, 255, 0.879)) }
+    50% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(62, 0, 143, 0.879), rgba(126, 61, 255, 0.879)) }
+    60% {background: linear-gradient(to right, rgba(16, 0, 68, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879)) }
+    70% {background: linear-gradient(to right, rgba(18, 0, 78, 0.879), rgba(107, 0, 247, 0.879),rgba(114, 43, 255, 0.879)) }
+    80% {background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(133, 71, 255, 0.879)) }
+    90% {background: linear-gradient(to right, rgba(30, 0, 131, 0.879), rgba(97, 0, 223, 0.879), rgba(126, 61, 255, 0.879)) }
+    100% {background: linear-gradient(to right, rgba(16, 0, 68, 0.879), rgba(96, 0, 223, 0.879), rgba(130, 68, 255, 0.879))}
+    
+
+}
+
+@keyframes round {
+    0% {margin-left: 0px; margin-top: 145px; z-index: 0;}
+    10% {margin-left: 80px; margin-top: 150px; z-index: 0;}
+    20% {margin-left: 160px; margin-top: 160px; z-index: 0;}
+    30% {margin-left: 240px; margin-top: 170px; z-index: 0;}
+    40% {margin-left: 320px; margin-top: 180px; z-index: 0;}
+    50% { margin-left: 400px; margin-top: 190px; z-index: 41; }
+    60% { margin-left: 320px;margin-top: 180px; z-index: 41; }
+    70% { margin-left: 240px;margin-top: 170px; z-index: 41; }
+    80% { margin-left: 160px;margin-top: 160px; z-index: 41; }
+    90% { margin-left: 80px;margin-top: 150px; z-index: 41; }
+    100% {margin-left: 0px;margin-top: 145px;  z-index:41;}
+    
+    
+}
+
+@keyframes shine {
+    0% {box-shadow: 0px 0px 30px rgb(255, 255, 128), 0px 0px 50px rgb(255, 255, 128)}
+    20% {box-shadow: 0px 0px 25px rgb(255, 255, 128), 0px 0px 100px rgb(255, 255, 128)}
+    40% {box-shadow: 0px 0px 25px rgb(255, 255, 128), 0px 0px 150px rgb(255, 255, 128)}
+    60% {box-shadow: 0px 0px 60px rgb(255, 255, 128), 0px 0px 170px rgb(255, 255, 128)}
+    80% {box-shadow: 0px 0px 100px rgb(255, 255, 128), 0px 0px 100px rgb(255, 255, 128)}
+    100% {box-shadow: 0px 0px 60px rgb(255, 255, 128), 0px 0px 370px rgb(255, 255, 128)}
+}
+
+@keyframes move1 {
+    0% {background: linear-gradient(to right, rgb(48, 0, 69), rgb(108, 0, 154), rgb(215, 120, 255));}
+    5% {background: linear-gradient(to right, rgb(60, 0, 130), rgb(99, 0, 141), rgb(205, 120, 255));}
+    10% {background: linear-gradient(to right, rgb(70, 0, 69), rgb(90, 0, 154), rgb(195, 120, 255));}
+    15% {background: linear-gradient(to right, rgb(80, 0, 69), rgb(80, 0, 154), rgb(185, 120, 255));}
+    20% {background: linear-gradient(to right, rgb(90, 0, 69), rgb(70, 0, 154), rgb(175, 120, 255));}
+    25% {background: linear-gradient(to right, rgb(100, 0, 69), rgb(58, 0, 154), rgb(165, 120, 255));}
+    30% {background: linear-gradient(to right, rgb(110, 0, 69), rgb(48, 0, 154), rgb(155, 120, 255));}
+    35% {background: linear-gradient(to right, rgb(120, 0, 69), rgb(38, 0, 154), rgb(145, 120, 255));}
+    40% {background: linear-gradient(to right, rgb(130, 0, 69), rgb(28, 0, 154), rgb(135, 120, 255));}
+    45% {background: linear-gradient(to right, rgb(140, 0, 69), rgb(18, 0, 154), rgb(125, 120, 255));}
+    50% {background: linear-gradient(to right, rgb(150, 0, 69), rgb(8, 0, 154), rgb(115, 120, 255));}
+    55% {background: linear-gradient(to right, rgb(160, 0, 69), rgb(0, 0, 154), rgb(105, 120, 255));}
+    60% {background: linear-gradient(to right, rgb(170, 0, 69), rgb(0, 10, 121), rgb(95, 120, 255));}
+    65% {background: linear-gradient(to right, rgb(180, 0, 69), rgb(0, 20, 154), rgb(85, 120, 255));}
+    70% {background: linear-gradient(to right, rgb(190, 0, 69), rgb(0, 30, 154), rgb(75, 120, 255));}
+    75% {background: linear-gradient(to right, rgb(200, 0, 69), rgb(0, 40, 154), rgb(65, 120, 255));}
+    80% {background: linear-gradient(to right, rgb(210, 0, 69), rgb(0, 50, 154), rgb(55, 120, 255));}
+    85% {background: linear-gradient(to right, rgb(220, 0, 69), rgb(0, 60, 154), rgb(45, 120, 255));}
+    90% {background: linear-gradient(to right, rgb(230, 0, 69), rgb(0, 70, 154), rgb(35, 120, 255));}
+    95% {background: linear-gradient(to right, rgb(240, 0, 69), rgb(0, 80, 154), rgb(25, 120, 255));}
+    100% {background: linear-gradient(to right, rgb(250, 0, 69), rgb(0, 90, 154), rgb(15, 120, 255));}
+    
+}
+
+.glob {
+    
+    position: fixed;
+    background: linear-gradient(to right, rgba(16, 0, 69, 0.879), rgba(67, 0, 154, 0.879), rgba(165, 120, 255, 0.879));
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-left: 400px;
+    animation: planet 4s infinite alternate linear, move 4s infinite alternate linear, round 10s infinite linear;
+    margin-top: 150px;
+}
+.glob1 {
+    z-index: 999;
+    position: fixed;
+    
+    background: linear-gradient(to right, rgb(48, 0, 69), rgb(108, 0, 154), rgb(215, 120, 255));
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 330px;
+    animation: planet 4s infinite alternate linear, move1 7s infinite alternate linear;
+    margin-top: 120px;
+}
+
+.star {
+    z-index: 999;
+    position: fixed;
+    animation: shine 4s infinite alternate linear;
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 400px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 20px;
+}
+.star2 {
+    z-index: 999;
+    position: fixed;
+    animation: shine 4s infinite alternate linear;
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 300px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 40px;
+}
+.star3 {
+    z-index: 999;
+    position: fixed;
+    animation: shine 4s infinite alternate linear;
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 200px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 30px;
+}
+.star4 {
+    z-index: 999;
+    position: fixed;
+    
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 520px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 80px;
+}
+
+.star5 {
+    z-index: 999;
+    position: fixed;
+    
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 420px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 80px;
+}
+
+.star6 {
+    z-index: 999;
+    position: fixed;
+    
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    margin-left: 100px;
+    animation: planet 4s infinite alternate linear;
+    margin-top: 60px;
+}
+
+
+
+.signBot {
+    z-index: 200;
+    position: fixed;
+    rotate: -5deg;
+    background: rgb(206, 62, 0);
+    border-left: solid rgba(0, 0, 0, 0.499);
+    border-bottom: solid rgba(0, 0, 0, 0.499);
+    border-right: solid rgba(0, 0, 0, 0.499);
+    
+    width: 10px;
+    height: 90px;
+    
+    margin-left: -220px;
+    margin-top: 280px;
+}
+
+.signTop {
+    font-family: serif;
+    font-weight: bold;
+    z-index: 200;
+    position: fixed;
+    rotate: -5deg;
+    background: linear-gradient(to right, rgb(206, 62, 0), rgba(201, 66, 8, 0.299), rgba(196, 58, 255, 0.327));
+    border-left: solid rgba(0, 0, 0, 0.499);
+    border-top: solid rgba(0, 0, 0, 0.499);
+    border-bottom: solid rgba(0, 0, 0, 0.166);
+    border-right: solid rgb(83, 101, 202);
+    
+    width: 115px;
+    height: 50px;
+    
+    margin-left: -230px;
+    margin-top: 230px;
+}
+
+
+
+.moon {
+    z-index: 40;
+    position: fixed;
+    background: linear-gradient(to right, rgb(83, 101, 202), rgb(182, 13, 255), rgb(196, 58, 255));
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    animation: moon 4s infinite alternate linear
+}
+
+.floor {
+    z-index: 20;
+    height: 30px;;
+    background: linear-gradient(to right, rgba(83, 101, 202, 0.073), rgb(219, 76, 255), rgba(36, 255, 248, 0.204));
+    margin-top: 350px;
+    width: 650px;
+    position: fixed;
+    border-top-left-radius: 75%;
+    border-bottom-right-radius: 100%;
+}
+.floor1 {
+    z-index: 15;
+    height: 30px;;
+    position: fixed;
+    background: linear-gradient(to right, rgba(199, 69, 255, 0), rgb(183, 16, 255), rgba(196, 59, 255, 0)); 
+    margin-top: 340px;
+    width: 650px;
+    border-top-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
+
+.floor2 {
+    z-index: 10;
+    height: 30px;;
+    position: fixed;
+    background: linear-gradient(to right, rgba(40, 7, 255, 0), rgb(119, 0, 184), rgba(40, 7, 255, 0)) ;
+    margin-top: 360px;
+    width: 650px;
+    border-top-left-radius: 20%;
+    
+    
+}
+
+

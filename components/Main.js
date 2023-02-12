@@ -20,7 +20,7 @@ const Main = () => {
         <input
           placeholder="Search by type"
           className={classes.input}
-          onChange={(e) => setFilter(e.target.value)}
+          onChange={(e) => setFilter(e.target.value.toLowerCase())}
         ></input>
       </div>
 

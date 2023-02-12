@@ -1,5 +1,5 @@
 import CategoryList from "@/components/CategoryList";
-import CATEGORIES from "../public/categories";
+import CATEGORIES from "../../public/categories"
 
 function Category(props) {
   return <CategoryList data={props.category}></CategoryList>;

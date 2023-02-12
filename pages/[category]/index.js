@@ -28,6 +28,6 @@ export async function getStaticPaths() {
       return { params: { category: category } };
     }),
 
-    fallback: false,
+    fallback: "blocking",
   };
 }

@@ -1,5 +1,5 @@
 import CategoryList from "@/components/CategoryList";
-import CATEGORIES from "../../public/categories"
+import CATEGORIES from "../../public/categories";
 
 function Category(props) {
   return <CategoryList data={props.category}></CategoryList>;
@@ -27,7 +27,6 @@ export async function getStaticPaths() {
     paths: CATEGORIES.map((category) => {
       return { params: { category: category } };
     }),
-
-    fallback: "blocking",
+    fallback: false
   };
 }

@@ -13,6 +13,21 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .mainDiv {
+        width: 100%
+       
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mainDiv {
+        width: 80%
+       
+    }
+}
+
+
 
 @keyframes divAct {
     from {box-shadow: 0px 0px 15px rgb(69, 255, 243), 0px 0px 15px rgb(69, 252, 255);}

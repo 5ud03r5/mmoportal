@@ -228,6 +228,7 @@
 
 .signTop {
     font-family: serif;
+    font-size: 0.9rem;
     font-weight: bold;
     z-index: 200;
     position: fixed;

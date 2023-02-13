@@ -43,5 +43,18 @@ const CATEGORIES = [
   "horror",
   "mmorts",
 ];
+export function categoriesList() {
+  return CATEGORIES;
+}
 
-export default CATEGORIES;
+const PLATFORM = ["PC", "Browser"];
+
+export function platformList() {
+  return PLATFORM;
+}
+
+const DIGITAL = ["3d", "2d"];
+
+export function digitalList() {
+  return DIGITAL;
+}

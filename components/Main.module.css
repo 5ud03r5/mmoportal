@@ -9,6 +9,42 @@
     
 }
 
+.platform {
+    margin-top: 10px;
+    background: rgb(21, 0, 45);
+    color: rgba(0, 255, 255, 0.44);
+    padding: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 1.2rem;
+    width: 20%;
+    border-radius: 10px
+   
+}
+
+    .platform:hover {
+        color: rgba(0, 255, 255, 0.714);
+        background: rgb(43, 0, 92);
+        cursor: pointer
+    }
+
+.platformActive {
+    margin-top: 10px;
+    color: cyan;
+    background: rgb(66, 0, 142);
+    padding: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 1.2rem;
+    width: 20%;
+    border-radius: 5px;;
+    box-shadow: 0px 0px 20px cyan, 0px 0px 20px cyan
+}
+
+    .platformActive:hover {
+        cursor: pointer
+    }
+
 .upDiv {
     position: fixed;
     
@@ -53,7 +89,7 @@
     }
 
 .categories {
-    margin-top: 20px;
+    margin-top: 10px;
     height: 100%;
     width: 800px;
 }
@@ -64,6 +100,15 @@
     text-align: center;
     justify-content: center;
 }
+
+.platforms {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
 
 .input {
     border: none;

@@ -1,19 +1,24 @@
 import classes from "./Main.module.css";
 import "bootstrap/dist/css/bootstrap.css";
-import CATEGORIES from "../public/categories";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const Main = () => {
+const Main = (props) => {
   const [filter, setFilter] = useState("");
+  const [chosenPlatform, setChosenPlatform] = useState("PC");
   const [filteredData, setFilteredData] = useState();
   useEffect(() => {
     setFilteredData(
-      CATEGORIES.filter((category) => {
+      props.categories.filter((category) => {
         return category.includes(filter);
       })
     );
   }, [filter]);
+
+  const platformClick = (platform) => {
+    setChosenPlatform(platform);
+  };
   return (
     <>
       <div className={classes.inputDiv}>
@@ -23,20 +28,40 @@ const Main = () => {
           onChange={(e) => setFilter(e.target.value.toLowerCase())}
         ></input>
       </div>
+      <div className={classes.platforms}>
+        {props.platform.map((platform) => {
+          return (
+            <div
+              onClick={() => platformClick(platform)}
+              name={platform}
+              className={
+                chosenPlatform === platform
+                  ? classes.platformActive
+                  : classes.platform
+              }
+            >
+              {platform}
+            </div>
+          );
+        })}
+      </div>
 
       <div className={classes.div}>
         <div className={classes.categories}>
           {!filter
-            ? CATEGORIES.map((category) => {
+            ? props.categories.map((category) => {
                 return (
-                  <Link href={`/${category}`} className={classes.category}>
+                  <Link
+                    href={`/${category}?platform=${chosenPlatform.toLowerCase()}`}
+                    className={classes.category}
+                  >
                     {category}
                   </Link>
                 );
               })
             : filteredData.map((category) => {
                 return (
-                  <Link href={`/${category}`} className={classes.category}>
+                  <Link href={`/${category}?platform=${chosenPlatform.toLowerCase()}`} className={classes.category}>
                     {category}
                   </Link>
                 );

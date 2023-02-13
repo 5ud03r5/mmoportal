@@ -29,8 +29,6 @@ const CATEGORIES = [
   "mmo",
   "mmofps",
   "mmotps",
-  "3d",
-  "2d",
   "anime",
   "fantasy",
   "sci-fi",

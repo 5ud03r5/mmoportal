@@ -11,7 +11,7 @@ export async function getStaticProps(context) {
   const { params } = context;
   const { category } = params;
   const res = await fetch(
-    "https://www.mmobomb.com/api1/games?category=" + category
+    "https://www.mmobomb.com/api1/games?platform=pc&category=" + category
   );
   const data = await res.json();
 

@@ -8,7 +8,7 @@ const CategoryList = (props) => {
           <div className={classes.div} key={item.id}>
             <div className={classes.title}>{item.title}</div>
             <div className="d-flex">
-              <img src={item.thumbnail} />
+              <img src={item.thumbnail} className={classes.img}/>
               <div className={classes.right}>
                 {item.short_description}
                 <div>
